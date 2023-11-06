@@ -1,13 +1,16 @@
-function createTodolist(){
-    var text = $("#input").val();
-    if (text === '') {
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
+
+function addTask(){
+    if (inputBox.value === '') {
         alert("You must write something!");
-    } else {
-    $("ul").append(`<li class="clickable">${text}</li>`);
+    } else{
+        let li = document.createElement("li");
+        li.innerHTML = inputBox.value;
+        listContainer.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7";
+        li.appendChild(span);
     }
+    inputBox.value = "";
 }
-
-
-
-$("#addtolist").click(createTodolist);
-
