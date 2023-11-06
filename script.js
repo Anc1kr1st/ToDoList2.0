@@ -7,9 +7,7 @@ function createTodolist(){
     }
 }
 
-function linethrough(){
-    $(".clickable").css('text-decoration', 'line-through');
-}
+
 
 $("#addtolist").click(createTodolist);
-$(".clickable").click(linethrough);
+
