@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: linear-gradient(135deg, #263b69, #46a122);
     padding: 10px;
 }
 .box{
@@ -49,7 +49,7 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: #225232;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -72,7 +72,7 @@ ul li::before{
     background-image: url(Images/8685579_ic_fluent_checkbox_unchecked_filled_icon.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 9px;
     left: 8px;
 }
 ul li.checked{
@@ -92,7 +92,9 @@ ul li span{
     color: #555;
     line-height: 40px;
     text-align: center;
+    border-radius: 50%;
 }
 ul li span:hover{
-    background: ;
+    background: #edeef0;
+
 }
