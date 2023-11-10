@@ -27,6 +27,15 @@ listContainer.addEventListener("click", function(e){
     }
 }, false);
 
+inputBox.addEventListener("keypress", function(event){
+    if(event.key === "Enter"){
+       addTask(this.value)
+    }
+   
+}, false);
+
+
+
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }

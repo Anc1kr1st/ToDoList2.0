@@ -98,3 +98,29 @@ ul li span:hover{
     background: #edeef0;
 
 }
+
+#list-container {
+    height: 20rem;
+    scrollbar-width: thin;
+    overflow-y: scroll;
+}
+
+/* width */
+#list-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  #list-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  #list-container::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  #list-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
